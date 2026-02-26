@@ -1,0 +1,5 @@
+num = int(input("Digite um numero:"))
+num2 = int(input("Digite o segundo numero:"))
+print(f"A soma dos dois numeros {num, num2} foi ", num + num2)
+print(f"A multiplicação dos dois numeros {num, num2} foi ", num * num2)
+print(f"A divisão dos dois numeros {num, num2} foi ", num / num2)
