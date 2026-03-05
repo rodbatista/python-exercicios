@@ -2,7 +2,7 @@
 # 2000 a 5000 -> 10%
 # acima de 5000 -> 20%
 
-def calcular_imposto(renda):
+def calcular_aliquota(renda):
     if 0 < renda <= 2000:
         return 0
     elif 2000 < renda <= 5000:
