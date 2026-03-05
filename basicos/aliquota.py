@@ -1,6 +1,7 @@
 # até 2000 -> 0%
 # 2000 a 5000 -> 10%
 # acima de 5000 -> 20%
+
 opcao_valida = ['1','2','3','4']
 
 while True:
@@ -12,11 +13,9 @@ while True:
 
 
     opcao = input("Escolha uma das opções acima:")
-    if opcao in opcao_valida:
-        break
-    else:
-        print("Digite corretamente uma das opções acima:")
-
+    if opcao not in opcao_valida:   #SO ACONTECE SE ISSO FOR VERDADEIRO.
+        print("Digite novamente uma opção válida!")
+        continue   #SE FOR TRUE, ELE CONTINUA O LOOPING VOLTANDO PRO TOPO, O BREAK PARA O LOOPING.
 
     if opcao == '1':
         renda = float(input("Digite sua renda mensal:"))
